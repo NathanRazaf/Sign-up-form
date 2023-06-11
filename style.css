@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Tokyo-Outline";
+    src: url("./fonts/Tokyo-Outline.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Tokyo-Regular";
+    src: url("./fonts/Tokyo-Regular.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side .content {
+    top: 40%;
+    position: absolute;
+    display: flex;
+    align-items: center;  /* Vertically center align items */
+    justify-content: center;
+    background-color: rgba(90, 23, 101, 0.7) ;  /* Background color black with 50% opacity */
+    width: 100%;  /* Make the content div take up the full width of .left-side */
+    height: 80px;
+    gap: 30px;
+}
+
+.left-side .content img {
+    margin-left: 200px;
+    object-fit: contain;  /* Image will be resized to maintain its aspect ratio and fit within the box */
+    max-height: 100vh;
+}
+
+.left-side .content h1 {
+    font-family: "Tokyo-Outline", fallback, sans-serif;
+    text-shadow: 7px 7px 8px #000000;
+    margin-left: 5px;
+    padding-right: 200px;  /* Decrease space between the image and the text */
+    color: white;  /* Make the text white so it's visible against the black background */
+    font-size: 50px;
+}
+
+.left-side img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right-side {
+    flex: 1;
+    background-color: rgb(49, 18, 59);
+    display: flex;
+    flex-direction: column;
+}
+
+.text-above {
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+    margin-right: 60px;
+    color: rgb(210, 210, 210);
+    font-size: large;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    color: azure;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
