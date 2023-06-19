@@ -19,7 +19,7 @@ html, body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .left-side {
@@ -27,7 +27,7 @@ html, body {
     top: 0;
     left: 0;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -69,6 +69,7 @@ html, body {
     background-color: rgb(49, 18, 59);
     display: flex;
     flex-direction: column;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .text-above {
@@ -83,12 +84,26 @@ html, body {
 
 form {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
     color: azure;
-    justify-content: space-around;
-    margin: 50px;
+    width: 100%;
+
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(106, 0, 127);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 17%;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.6);
 }
 
 .form-left {
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -106,4 +121,71 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+input {
+    border-radius: 6px;
+    background-color: #411d2c;
+    height: 20px;
+    width: 250px;
+    border: 3px solid rgb(158, 134, 215);
+    transition: all 0.2s ease;
+    color: beige;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3a61af;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: #b8bb9d;
+}
+
+.signup-btn {
+    margin: 30px;
+    padding: 15px;
+    background-color: rgb(127, 77, 219);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    color: rgb(205, 205, 205);
+    font-weight: bolder;
+    border-radius: 9px;
+    border: 3px solid black;
+    transition: all 0.2s ease;
+}
+
+.signup-btn:hover {
+    background-color: rgb(77, 50, 128);
+    transform: translateY(-2px);
+    transform: translateX(-1px);
+    box-shadow: 3px 3px 2px 0px black;
+}
+
+.login {
+    margin: 10px;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login p {
+    padding: 20px;
+    margin-left: 10px;
+    font-size: large;
+    color: #3971e0;
+}
+
+.log-link {
+    color: rgb(180, 19, 19);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.log-link:hover {
+    color: rgb(255, 0, 0);
 }

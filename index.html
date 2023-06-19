@@ -22,34 +22,41 @@
                 <p class="remote-text">You <em>know</em> you want to.</p>
             </div>
             <form action="#">
-                <div class="form-left">
-                    <div class="input">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name">
+                <div class="form-container">
+                    <div class="form-left">
+                        <div class="input">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" title="Input your first name" placeholder="John" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" title="Input your email" placeholder="com@example.com" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input class="error" type="password" name="password" id="password" title="Input your new password" required>
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+    
+                    <div class="form-right">
+                        <div class="input">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" title="Input your last name" placeholder="Doe" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" title="Input your phone number" placeholder="XXXXXXXXXX" required>
+                        </div>
+                        <div class="input">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input class="error" type="password" name="confirm-password" id="confirm-password" title="Confirm your password" required>
+                        </div>
                     </div>
                 </div>
 
-                <div class="form-right">
-                    <div class="input">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                    <div class="input">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="tel" name="phone-number" id="phone-number">
-                    </div>
-                    <div class="input">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
+                <div class="login">
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                    <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="log-link">Log in</a></p>
                 </div>
             </form>
         </div>
